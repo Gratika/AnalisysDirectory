@@ -17,10 +17,12 @@ namespace AnalisysDirectory
                 return;
             }
 
-            string path = args[0];
+            string path =args[0];
 
             try
             {
+                DirectoryParser dp = new DirectoryParser(path);
+                dp.start();
                
             }
             catch (Exception err)
