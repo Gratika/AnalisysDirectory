@@ -195,7 +195,7 @@ namespace AnalisysDirectory
 
         }
         //получить расширение файлов из введенной пользователем команды
-        private string getExtension(string commandParse)
+        public string getExtension(string commandParse)
         {
             string res = null;
             string[] parts = commandParse.Split(" ".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
